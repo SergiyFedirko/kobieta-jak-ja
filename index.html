@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+        <link rel="stylesheet" href="css/style_head.css">
+        <link rel="stylesheet" href="Egipt/css/style_egipt.css">
+        <script type="text/javascript">
+                function rand() {
+                        var urls = ['Egipt/Egipt.html',
+                                '20-lecie/20.html',
+                                'Barok/Barok.html',
+                                'Grecja/Grecja.html',
+                                'MlodaPolska/MlodaPolska.html',
+                                'Oswiecenie/oswiecenie.html',
+                                'Pozytywizm/pozytywizm.html',
+                                'Renesans/renesans.html',
+                                'Romantyzm/romantyzm.html',
+                                'Rzym/Rzym.html',
+                                'Sredniowicze/Sredniowicze.html'
+
+                        ];
+
+                        document.location.href = urls[Math.round(Math.random() * 10)];
+                }
+        </script>
+</head>
+
+<body onload="rand()">
+
+        <!-- <a href="javascript: rand();"><img  id="knopka1" src="images/knopka1.png"></a> -->
+
+</body>
+
+</html>

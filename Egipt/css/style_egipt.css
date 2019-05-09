@@ -1,0 +1,313 @@
+/*#brick {
+    width: 40px;
+    height: 20px;
+    background: #EE6B47;
+    position: relative;
+    cursor: pointer;
+    
+  }
+
+  #brick1 {
+    margin-top: 5px;
+    width: 40px;
+    height: 20px;
+    background: #EE6B47;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  #path {
+    outline: 1px solid #E8C48E;
+    width: 540px;
+    height: 20px;
+  }
+*/
+body {
+  font-family: "Indie Flower";
+  line-height: 1.618em;
+  background-color: #dea040;
+  background-image: repeating-radial-gradient(circle, 
+  #ff9b00,#ffc05f 50%, #9c5f00 100% 
+  );
+  background-size: 10px 10px;
+}
+
+  #counter{
+    visibility: hidden;
+  }
+
+  #knopka{
+    visibility: hidden;
+    position: absolute;
+    padding: 0px;
+    right: 50px;
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+  }
+  #knopka1{
+    position: absolute;
+    padding: 0px;
+    right: 50px;
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+
+  }
+  
+ /* #button1{
+    position: absolute;
+    bottom: 20px;
+    align-items: center;
+    width: 100px;
+    height: 100px; 
+    margin:0px; 
+    border:0px; 
+    background:none;
+  }*/
+
+  #button,button:active, 
+  button:focus {
+    outline: none;
+    margin-left: -42px;
+    margin-top: -42px;
+    width: 5%;
+    position: fixed;
+    cursor: pointer;
+  }
+
+  .egipt{
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top:0;
+    margin-left: 40%;
+    margin-top: 50px;
+    height: 800px;
+  }
+
+  
+  .etext{
+    opacity: 0; 
+    
+    animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+
+  }
+  
+  #etextbox{
+    position: absolute;
+    text-align: justify;
+    cursor: default;
+    height: 300px;
+    width: 700px;
+    right: 200px;
+  }
+  
+
+  .egiptinfo{
+    position: absolute;
+    height: 500px;
+    margin-left: 5%;
+    margin-top: 1%;
+
+  }
+
+  #egipt{
+    width: 40%;
+  }
+
+  #egiptfin{
+    visibility: hidden;
+    width: 40%;
+    position: relative;
+    cursor: pointer;
+    left: 0px;
+    transition: left 3s cubic-bezier(0, 0, 1, 1);
+  }
+/*
+  #egiptfin.animate{
+    margin-left: -400px;
+    margin-top: -50px;
+    height: 500px;
+    transition-property: margin-left,margin-top, height;
+    transition-duration: 9s;
+  }
+*/
+  #esukienka{
+    margin-left: -240px;
+    margin-top: -72px;
+    width: 40%;
+  }
+
+  #ebuty{
+    margin-left: -100px;
+    margin-top: 100px;
+    width: 40%;
+  }
+
+  #ebransoletki{
+    margin-left: -350px;
+    margin-top: 157.5px;
+    width: 89%;
+  }
+
+  #eobrucz{
+    margin-left: 100.5px;
+    margin-top: 150px;
+    width: 79%;
+  }
+
+  #epasek{
+    margin-left: 350px;
+    margin-top: 140px;
+    width: 40%;
+  }
+
+  #epektoral{
+    margin-left: 250px;
+    margin-top: -50px;
+    width: 40%;
+  }
+
+  #eposoch{
+    margin-left: 50px;
+    margin-top: 0px;
+    width: 40%;
+  }
+
+  #egiptall{
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 100%;
+  }
+  
+  #eposoch.animate{
+    margin-left: 320px;
+    transition-property: margin-left;
+    transition-duration: 9s;
+  }
+
+
+  
+  /*
+  #esukienka.animate {
+    margin-left: 0px;
+    margin-top: 0px;
+    transition-property: margin-left,margin-top;
+    transition-duration: 9s;
+    
+    
+  }
+
+  #esukienka.animate1 {
+    margin-left: -240px;
+    margin-top: -96px;
+    transition-property: margin-left,margin-top;
+    transition-duration: 9s;
+    
+  }
+
+  #ebuty.animate{
+    margin-left: 0px;
+    margin-top: 0px;
+    transition-property: margin-left,margin-top;
+    transition-duration: 9s;
+  }
+
+  #ebransoletki.animate{
+    margin-left: 0px;
+    margin-top: 0px;
+    transition-property: margin-left,margin-top;
+    transition-duration: 9s;
+  }
+
+  #eobrucz.animate{
+    margin-left: 0px;
+    margin-top: 0px;
+    transition-property: margin-left,margin-top;
+    transition-duration: 9s;
+  }
+
+  #epasek.animate{
+    margin-left: 0px;
+    margin-top: 0px;
+    transition-property: margin-left,margin-top;
+    transition-duration: 9s;
+  }
+
+  #epektoral.animate{
+    margin-left: 0px;
+    margin-top: 0px;
+    transition-property: margin-left,margin-top;
+    transition-duration: 9s;
+  }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  

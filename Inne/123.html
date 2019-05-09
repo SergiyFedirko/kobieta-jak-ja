@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  
+  
+<style>
+
+#block
+{
+  position: absolute; /*необходимо для своих стрелок*/
+  height: 256px;
+  width: 256px;
+  overflow: hidden;
+}
+
+#block:after /*стрелка вверх*/
+{
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  opacity: 0.75;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 4px solid #000;
+}
+
+#block:before /*стрелка вниз*/
+{
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  opacity: 0.75;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-top: 4px solid #000;
+}
+
+.info
+{
+  height: 100%;
+  width: 100%;
+  padding: 0 25px 0 0; /*"прячет" системную полосу прокрутки за пределы block*/
+  margin: 0; /*убирает отступы у тега <p>, что не требуется в <div>*/
+  overflow: auto;
+}
+
+</style>
+<body onload="wczytaj()" scroll="no" style="overflow: hidden">
+<div id="block">
+  <p class="info">
+Вот дом,<br>
+Который построил Джек.
+<br><br>
+А это пшеница,<br>
+Которая в темном чулане хранится<br>
+В доме,<br>
+Который построил Джек.
+<br><br>
+А это веселая птица-синица,<br>
+Которая часто ворует пшеницу,<br>
+Которая в темном чулане хранится<br>
+В доме,<br>
+Который построил Джек.
+<br><br>
+Вот кот,<br>
+Который пугает и ловит синицу,<br>
+Которая часто ворует пшеницу,<br>
+Которая в темном чулане хранится<br>
+В доме,<br>
+Который построил Джек.
+  </p>
+</div>
+
+</body>
+
+</html>
